@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(238, 238, 238);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin: 20px auto; /* Ahora el margen solo se aplica horizontalmente */
+    color: #3052ce;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 10px;
+    padding: 20px;   
+}
+
+main {
+    margin-top: 70px;
+}
+
+section {
+    margin-top: 20px;
+    background-color: rgb(255,255,255);
+    padding: 50px;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+section form div {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+section input {
+    width: 100%;
+    padding: 7px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+section button {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #ccc;
+    background-color: #244bd8;
+    transition: opacity 0.3s ease;
+}
+
+section button:hover {
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    font-size: 14px; 
+    padding: 10px; 
+    background-color: #377ae0;
+}
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+}
+
+.footer-links {
+    list-style: none; 
+    padding: 0;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-links li {
+    display: inline;
+    margin-right: 20px; 
+}
+
+.footer-links li a:hover {
+    color: #3052ce; 
+}
+
+#recuperar {
+    font-size: 12px;
+}
