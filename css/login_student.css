@@ -63,14 +63,14 @@ section button:hover {
 }
 
 footer {
-    text-align: center;
     font-size: 14px; 
     padding: 10px; 
     background-color: #377ae0;
+    margin-top: 50px;
 }
 
-.logo img {
-    max-width: 50px;
+.Logo img {
+    max-width: 100px;
     height: auto;
 }
 
