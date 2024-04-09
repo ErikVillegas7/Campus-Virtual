@@ -1,13 +1,30 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Obtener todas las imágenes del carrusel
-    var imagenes = document.querySelectorAll("#banner a img");
-    var posicionActual1 = 0;
-    var time = setInterval(siguienteImagen, 5000); // Cambia la imagen cada 5 segundos
+var slideIndex = 1;
+showSlides(slideIndex);
 
-    // Función para mostrar la siguiente imagen
-    function siguienteImagen() {
-        imagenes[posicionActual1].style.display = "none"; // Oculta la imagen actual
-        posicionActual1 = (posicionActual1 + 1) % imagenes.length; // Calcula el índice de la siguiente imagen
-        imagenes[posicionActual1].style.display = "block"; // Muestra la siguiente imagen
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides-fade");
+    var dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
+
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
     }
-});
+
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
