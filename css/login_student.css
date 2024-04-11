@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    margin: 20px auto; /* Ahora el margen solo se aplica horizontalmente */
+    margin: 20px auto; 
     color: #3052ce;
     font-family: "Montserrat", sans-serif;
     text-align: center;
@@ -27,20 +27,29 @@ section {
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
+    position: relative; /* Establecer posición relativa para el posicionamiento absoluto del botón */
 }
 
 section form div {
     font-size: 14px;
     margin-bottom: 20px;
+    position: relative; /* Establecer posición relativa para el posicionamiento absoluto del botón */
 }
 
 section label {
     display: block;
     margin-bottom: 5px;
 }
-
 section input {
-    width: 100%;
+    width: calc(100% - 0px);
+    padding: 7px;
+    font-size: 12px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+#password{
+    width: calc(100% - 70px);
     padding: 7px;
     font-size: 12px;
     border: 1px solid #ccc;
@@ -48,7 +57,7 @@ section input {
     box-sizing: border-box;
 }
 
-section button {
+.button-login {
     width: 100%;
     padding: 7px;
     border: 1px solid #ccc;
@@ -58,7 +67,7 @@ section button {
     transition: opacity 0.3s ease;
 }
 
-section button:hover {
+.button-login:hover {
     opacity: 0.9;
 }
 
@@ -100,4 +109,18 @@ footer {
 
 #recuperar {
     font-size: 12px;
+}
+
+.button {
+    position: absolute; /* Establecer posición absoluta para el botón */
+    top: 70%; /* Alinear verticalmente al centro */
+    right: 0; /* Alinear a la derecha */
+    transform: translateY(-50%); /* Alinear verticalmente al centro */
+    width: 70px; /* Ancho del botón */
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #244bd8; /* Color del botón */
+    background-color: #fff; /* Fondo del botón */
+    cursor: pointer;
 }
