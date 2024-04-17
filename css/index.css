@@ -84,6 +84,9 @@ nav ul li ul li a:hover {
 nav ul li:hover ul {
     display: block;
 }
+h1{
+  color: #002346;
+}
 .mySlides-fade {
     display: none;
 }
